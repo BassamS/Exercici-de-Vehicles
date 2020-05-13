@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Vehicles FE</title>
+</head>
+
+<body>
+    <!------------------------- Create Car -------------------------->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+
+                <!-- Plate number -->
+                <label>Plate No.</label>
+                <input id="plate" class="form-control" type="text">
+            </div>
+
+            <!-- Brand -->
+            <div class="col-4">
+                <label>Brand</label>
+                <input id="brand" class="form-control" type="text">
+            </div>
+
+            <!-- Color -->
+            <div class="col-4">
+                <label>Color</label>
+                <input id="color" class="form-control" type="text">
+            </div>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="container">
+        <p id="carInfo"></p>
+        <button class="btn btn-primary" onclick="createCar()">Create car</button>
+    </div>
+
+    <!------------------- Adding wheels ---------------------->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3">
+
+                <!-- Rueda 1 -->
+                <label>Marca Rueda 1</label>
+                <input id="rueda1" class="form-control" type="text">
+            </div>
+
+            <!-- Diametro 1 -->
+            <div class="col-3">
+                <label>Diametro Rueda 1</label>
+                <input id="diameter1" class="form-control" type="text">
+            </div>
+
+            <!-- Rueda 2 -->
+            <div class="col-3">
+                <label>Marca Rueda 2</label>
+                <input id="rueda2" class="form-control" type="text">
+            </div>
+
+            <!-- Diametro 2 -->
+            <div class="col-3">
+                <label>Diametro Rueda 2</label>
+                <input id="diameter2" class="form-control" type="text">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-3">
+                <!-- Rueda 3 -->
+                <label>Marca Rueda 3</label>
+                <input id="rueda3" class="form-control" type="text">
+            </div>
+
+            <!-- Diametro 3 -->
+            <div class="col-3">
+                <label>Diametro Rueda 3</label>
+                <input id="diameter3" class="form-control" type="text">
+            </div>
+
+            <!-- Rueda 4 -->
+            <div class="col-3">
+                <label>Marca Rueda 4</label>
+                <input id="rueda4" class="form-control" type="text">
+            </div>
+
+            <!-- Diametro 4 -->
+            <div class="col-3">
+                <label>Diametro Rueda 4</label>
+                <input id="diameter4" class="form-control" type="text">
+            </div>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="container">
+        <p id="carInfo"></p>
+        <button class="btn btn-primary" onclick="addWheels()">Add Wheels</button>
+    </div>
+
+    <!-- Outputting result 2 -->
+    <div class="container">
+        <h3 class="text-center mt-5 p-1 bg-success" id="output"></h3>
+    </div>
+
+    <!-- Outputting result 3 -->
+    <div class="container">
+        <h3 class="text-center mt-5 p-1 bg-success" id="output2"></h3>
+    </div>
+
+
+
+    <!-- Bootstrap Styling -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- From Master -->
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+</body>
+
+</html>
