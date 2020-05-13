@@ -16,7 +16,7 @@ var diameter4 = document.getElementById('diameter4');
 function createCar() {
     var car = new Car(plate.value, brand.value, color.value);
     // Validating that vehicle the plate has 4 digits(d{4}) and 3 letters!
-    var isPlateOK = /^\d{4} ?[A-Za-z]{3}$/.test(plate);
+    var isPlateOK = /^[0-9]{4}[a-zA-Z]{3}$/.test(plate);
     if (!isPlateOK) {
         alert('Please enter a valid plate number!');
     }
