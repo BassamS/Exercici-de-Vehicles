@@ -1,7 +1,7 @@
 // Variables
 let car: Car;
 
-let plate: any = document.getElementById('plate')! as HTMLInputElement;
+let plate = document.getElementById('plate')! as HTMLInputElement;
 let brand = document.getElementById('brand')! as HTMLInputElement;
 let color = document.getElementById('color')! as HTMLInputElement;
 
@@ -22,7 +22,7 @@ function createCar() {
     let car = new Car(plate.value, brand.value, color.value);
 
     // Validating that vehicle the plate has 4 digits(d{4}) and 3 letters!
-    let isPlateOK = /^[0-9]{4}[a-zA-Z]{3}$/.test(plate);
+    let isPlateOK = /^[0-9]{4}[a-zA-Z]{3}$/.test(plate.value);
 
     if (!isPlateOK) {
         alert('Please enter a valid plate number!');
